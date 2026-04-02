@@ -1,0 +1,9 @@
+.bg-linear-gradient {
+  background-image: linear-gradient(to right, #4f39f6, #9514fa);
+}
+
+.text-linear-gradient {
+  background-image: linear-gradient(to right, #4f39f6, #9514fa);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
