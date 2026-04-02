@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Free Tools Pack",
+    "description": "Access essential digiTools features for personal use.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Basic SEO tools",
+      "Limited file conversions",
+      "Access to 5+ utilities",
+      "No login required"
+    ],
+    "icon": "https://i.ibb.co.com/wZncJNLx/writing-2327400-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Starter Suite",
+    "description": "Perfect for freelancers and small creators.",
+    "price": 5.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "20+ digital tools",
+      "Unlimited file conversions",
+      "Basic analytics",
+      "Ad-free experience"
+    ],
+    "icon": "https://i.ibb.co.com/1tzrJb76/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Pro Suite",
+    "description": "Advanced toolkit for professionals and marketers.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "50+ premium tools",
+      "SEO & keyword research",
+      "AI content generator",
+      "Export to multiple formats",
+      "Cloud storage integration"
+    ],
+    "icon": "https://i.ibb.co.com/HDpSFWDB/Group.png"
+  },
+  {
+    "id": 4,
+    "name": "Business Toolkit",
+    "description": "Designed for teams and growing businesses.",
+    "price": 79.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "highlight",
+    "features": [
+      "Team collaboration",
+      "User management dashboard",
+      "Advanced analytics & reports",
+      "Priority email support",
+      "API access"
+    ],
+    "icon": "https://i.ibb.co.com/8gGqmqVX/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "Enterprise Suite",
+    "description": "Custom solutions for large-scale operations.",
+    "price": 199.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "featured",
+    "features": [
+      "All tools unlocked",
+      "Custom integrations",
+      "Dedicated account manager",
+      "24/7 premium support",
+      "White-label solutions"
+    ],
+    "icon": "https://i.ibb.co.com/8457snxG/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "AI Power Pack",
+    "description": "Unlock advanced AI-driven tools for automation and content creation.",
+    "price": 15.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "highlight",
+    "features": [
+      "AI content generator",
+      "Image & text enhancement tools",
+      "Chatbot integration",
+      "Auto summarization",
+      "Voice-to-text conversion"
+    ],
+    "icon": "https://i.ibb.co.com/RTrxQR1q/social-media.png"
+  }
+]

@@ -1,6 +1,10 @@
-import React from "react";
+import { use, useState } from "react";
+import MainCenterProduct from "../MainCenterProduct/MainCenterProduct";
 
-const MainStart = () => {
+const MainStart = ({ digiToolsPromise }) => {
+  const digiTools = use(digiToolsPromise);
+  const [productType, setProductType] = useState("product");
+  const [digiToolsProduct, setDigiToolsProduct] = useState([]);
   return (
     <div>
       <div className="justify-items-center mt-18 mb-8 space-y-4">
@@ -9,13 +13,35 @@ const MainStart = () => {
           Choose from our curated collection of premium digital products
           designed <br /> to boost your productivity and creativity.
         </p>
-        <div>
-          <button className="btn bg-linear-gradient text-white rounded-full">
+        <div className="flex items-center border-2 border-gray-200 rounded-full">
+          <button
+            onClick={() => setProductType("product")}
+            className={
+              productType === "product"
+                ? "btn bg-linear-gradient text-white rounded-full"
+                : "btn rounded-full btn-ghost text-linear-gradient"
+            }
+          >
             Product
           </button>
-          <button className="btn btn-ghost">Cart(2)</button>
+          <button
+            onClick={() => setProductType("cart")}
+            className={
+              productType === "cart"
+                ? "btn bg-linear-gradient text-white rounded-full"
+                : "btn rounded-full btn-ghost text-linear-gradient"
+            }
+          >
+            Cart({digiTools.length})
+          </button>
         </div>
       </div>
+      <MainCenterProduct
+        digiTools={digiTools}
+        digiToolsProduct={digiToolsProduct}
+        setDigiToolsProduct={setDigiToolsProduct}
+        productType={productType}
+      />
     </div>
   );
 };
