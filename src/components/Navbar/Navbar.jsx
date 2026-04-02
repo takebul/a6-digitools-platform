@@ -45,7 +45,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost border-none shadow-none text-3xl py-8 font-bold text-linear-gradient lg:text-4xl">
+          <a className="cursor-pointer text-3xl py-8 font-bold text-linear-gradient lg:text-4xl">
             DigiTools
           </a>
         </div>
