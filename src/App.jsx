@@ -9,6 +9,7 @@ import MainCenterCart from "./components/Ui/MainCenterCart";
 import MainEnd from "./components/Main/MainEnd/MainEnd";
 import MainEndPricing from "./components/Main/MainEnd/MainEndPricing";
 import MainEndWorkflow from "./components/Main/MainEnd/MainEndWorkflow";
+import Footer from "./components/Footer/Footer";
 
 const fetchDigiTools = async () => {
   const res = await fetch("/data.json");
@@ -41,6 +42,7 @@ function App() {
       <MainEnd />
       <MainEndPricing />
       <MainEndWorkflow />
+      <Footer />
     </>
   );
 }
