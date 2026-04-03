@@ -15,7 +15,7 @@ const Hero = () => {
             New: AI-Powered Tools Available
           </p>
         </div>
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
           Supercharge Your <br /> Digital Workflow
         </h1>
         <p className="text-gray-500">

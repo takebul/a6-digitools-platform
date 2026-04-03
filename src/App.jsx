@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Stat from "./components/Stat/Stat";
 import MainCenterProduct from "./components/Main/MainCenterProduct/MainCenterProduct";
 import MainCenterCart from "./components/Ui/MainCenterCart";
+import MainEnd from "./components/Main/MainEnd/MainEnd";
 
 const fetchDigiTools = async () => {
   const res = await fetch("/data.json");
@@ -35,6 +36,7 @@ function App() {
           setCenterCart={setCenterCart}
         />
       </Suspense>
+      <MainEnd />
     </>
   );
 }
