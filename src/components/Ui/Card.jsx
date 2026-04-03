@@ -29,7 +29,15 @@ const Card = ({ digiTool, centerCart, setCenterCart }) => {
             <img src={digiTool.icon} alt={digiTool.name} />
           </div>
           <div>
-            <p className="bg-amber-100 px-3 text-amber-600 py-1 rounded-full">
+            <p
+              className={
+                digiTool.tag === "popular"
+                  ? "bg-purple-100 px-3 text-purple-600 py-1 rounded-full"
+                  : digiTool.tag === "new"
+                    ? "bg-green-100 px-3 text-green-600 py-1 rounded-full"
+                    : "bg-amber-100 px-3 text-amber-600 py-1 rounded-full"
+              }
+            >
               {digiTool.tag}
             </p>
           </div>
