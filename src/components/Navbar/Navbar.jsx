@@ -1,7 +1,12 @@
 import { ShoppingCart } from "lucide-react";
-import React from "react";
 
-const Navbar = () => {
+import MainCenterCart from "../Ui/MainCenterCart";
+
+const Navbar = ({ centerCart }) => {
+  const handleCart = () => {
+    console.log("cart clicked");
+  };
+
   return (
     <div className="border-b border-gray-300">
       <div className="navbar bg-base-100  lg:w-11/12 mx-auto">
@@ -70,12 +75,18 @@ const Navbar = () => {
         </div>
         <div className="navbar-end flex flex-row gap-2">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-            <div className="indicator">
+            <button onClick={handleCart} className="indicator">
               <ShoppingCart className="w-4 h-auto lg:w-6" />
-              <span className="badge badge-sm indicator-item bg-red-500 w-5 h-5 text-white">
-                8
+              <span
+                className={
+                  centerCart.length === 0
+                    ? ""
+                    : "badge badge-sm indicator-item bg-red-500 w-5 h-5 text-white"
+                }
+              >
+                {centerCart.length === 0 ? "" : centerCart.length}
               </span>
-            </div>
+            </button>
           </div>
           <button className="btn btn-ghost rounded-full">Login</button>
           <button className="btn rounded-full bg-linear-gradient text-white">

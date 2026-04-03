@@ -1,11 +1,25 @@
 import { Check } from "lucide-react";
+import { useState } from "react";
+import { toast } from "react-toastify";
 
-const Card = ({ digiTool, digiToolsProduct, setDigiToolsProduct }) => {
-  //   console.log(digiTool);
-  console.log(digiTool.name);
+const Card = ({ digiTool, centerCart, setCenterCart }) => {
   const digiToolsFeatures = digiTool.features;
-  console.log(digiToolsFeatures);
   const [feature1, feature2, feature3, feature4, feature5] = digiToolsFeatures;
+
+  const [isAdd, setIsAdd] = useState(false);
+
+  const handleBuyNow = () => {
+    setIsAdd(true);
+
+    const isFound = centerCart.find((cartItem) => cartItem.id === digiTool.id);
+    if (isFound) {
+      toast.warning("Tools already in cart");
+      return;
+    }
+
+    setCenterCart([...centerCart, digiTool]);
+    toast.success("Added To Cart Successfully");
+  };
 
   return (
     <div>
@@ -28,28 +42,35 @@ const Card = ({ digiTool, digiToolsProduct, setDigiToolsProduct }) => {
         </p>
         <div className="text-gray-500">
           <p className="flex gap-1 items-center">
-            <Check size={"22px"} color="green" />
+            <Check size={"22px"} color="#19942e" />
             {feature1}
           </p>
           <p className="flex gap-1 items-center">
-            <Check size={"22px"} color="green" />
+            <Check size={"22px"} color="#19942e" />
             {feature2}
           </p>
           <p className="flex gap-1 items-center">
-            <Check size={"22px"} color="green" />
+            <Check size={"22px"} color="#19942e" />
             {feature3}
           </p>
           <p className="flex gap-1 items-center">
-            <Check size={"22px"} color="green" />
+            <Check size={"22px"} color="#19942e" />
             {feature4}
           </p>
           <p className="flex gap-1 items-center">
-            {feature5 ? <Check size={"22px"} color="green" /> : ""}
+            {feature5 ? <Check size={"22px"} color="#19942e" /> : ""}
             {feature5}
           </p>
         </div>
-        <button className="btn bg-linear-gradient text-white w-full rounded-full">
-          Buy Now
+        <button
+          onClick={handleBuyNow}
+          className={
+            isAdd
+              ? "btn bg-green-500 text-white w-full rounded-full"
+              : "btn bg-linear-gradient text-white w-full rounded-full"
+          }
+        >
+          {isAdd ? "Added To Cart" : "Buy Now"}
         </button>
       </div>
     </div>

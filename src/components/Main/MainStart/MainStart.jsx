@@ -1,10 +1,10 @@
 import { use, useState } from "react";
 import MainCenterProduct from "../MainCenterProduct/MainCenterProduct";
+import MainCenterCart from "../../Ui/MainCenterCart";
 
-const MainStart = ({ digiToolsPromise }) => {
+const MainStart = ({ digiToolsPromise, centerCart, setCenterCart }) => {
   const digiTools = use(digiToolsPromise);
   const [productType, setProductType] = useState("product");
-  const [digiToolsProduct, setDigiToolsProduct] = useState([]);
   return (
     <div>
       <div className="justify-items-center mt-18 mb-8 space-y-4">
@@ -24,6 +24,7 @@ const MainStart = ({ digiToolsPromise }) => {
           >
             Product
           </button>
+
           <button
             onClick={() => setProductType("cart")}
             className={
@@ -32,16 +33,22 @@ const MainStart = ({ digiToolsPromise }) => {
                 : "btn rounded-full btn-ghost text-linear-gradient"
             }
           >
-            Cart({digiTools.length})
+            Cart({centerCart.length})
           </button>
         </div>
       </div>
-      <MainCenterProduct
-        digiTools={digiTools}
-        digiToolsProduct={digiToolsProduct}
-        setDigiToolsProduct={setDigiToolsProduct}
-        productType={productType}
-      />
+      {productType === "product" && (
+        <MainCenterProduct
+          digiTools={digiTools}
+          productType={productType}
+          centerCart={centerCart}
+          setCenterCart={setCenterCart}
+        />
+      )}
+
+      {productType === "cart" && (
+        <MainCenterCart centerCart={centerCart} setCenterCart={setCenterCart} />
+      )}
     </div>
   );
 };

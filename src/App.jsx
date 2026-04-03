@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Hero from "./components/Hero/Hero";
 import MainStart from "./components/Main/MainStart/MainStart";
@@ -14,9 +14,12 @@ const fetchDigiTools = async () => {
 
 function App() {
   const digiToolsPromise = fetchDigiTools();
+
+  const [centerCart, setCenterCart] = useState([]);
+
   return (
     <>
-      <Navbar />
+      <Navbar centerCart={centerCart} />
       <Hero />
       <Stat />
       <Suspense
@@ -26,9 +29,11 @@ function App() {
           </div>
         }
       >
-        <MainStart digiToolsPromise={digiToolsPromise} />
-        {/* <MainCenterProduct />
-        <MainCenterCart /> */}
+        <MainStart
+          digiToolsPromise={digiToolsPromise}
+          centerCart={centerCart}
+          setCenterCart={setCenterCart}
+        />
       </Suspense>
     </>
   );
