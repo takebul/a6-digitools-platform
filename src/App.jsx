@@ -7,6 +7,7 @@ import Stat from "./components/Stat/Stat";
 import MainCenterProduct from "./components/Main/MainCenterProduct/MainCenterProduct";
 import MainCenterCart from "./components/Ui/MainCenterCart";
 import MainEnd from "./components/Main/MainEnd/MainEnd";
+import MainEndPricing from "./components/Main/MainEnd/MainEndPricing/MainEndPricing";
 
 const fetchDigiTools = async () => {
   const res = await fetch("/data.json");
@@ -37,6 +38,7 @@ function App() {
         />
       </Suspense>
       <MainEnd />
+      <MainEndPricing />
     </>
   );
 }
