@@ -4,7 +4,7 @@ import React from "react";
 const MainEnd = () => {
   return (
     <div className="bg-base-200 pb-20">
-      <div className="justify-items-center space-y-3 mt-20 pt-30 mb-15">
+      <div className="text-center space-y-3 mt-20 pt-30 mb-15">
         <h1 className="text-5xl font-semibold">Get Started in 3 Steps</h1>
         <p className="text-md font-medium text-gray-500">
           Start using premium digital tools in minutes, not hours.
