@@ -1,16 +1,35 @@
-# React + Vite
+# Digi-Tools Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description:
 
-Currently, two official plugins are available:
+The Digi-Tools Platform is very useful to you. You can use lots of tools on this platform. Firstly, you can use the free trial version, then if you want to or if you are interested in this tool, you can purchase the premium version that you need.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## When I made this platform, I was using this technology:
 
-## Expanding the ESLint configuration
+- React.js
+- Tailwind CSS, DaisyUI
+- JavaScript (ES6+)
+- React-Toastify (NPM Package)
+- Lucide-React (for icons)
+- React-icons (for icons)
+- JSON (for product data)
+- ImgBB (for image web link)
+- Netlify (for deploy project)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 3 special features about this project:
+
+1. Firstly, you can use free tools. If you are interested in these tools, you can also use the “starter suite tools”. These tools are perfect for freelancers and small creators, or if you start with a 0 level-in these tools, you can use these tools. It’s a very beginner-friendly tool.
+
+--
+
+2. Secondly, you can use “Ai Power Pack” because it’s new, but it adds lots of features, and it’s ai generated tools. You can create content, you can make your content your own idea, you can put your tools and prompt this ai tools to make your tools. This tool is advanced level tool, it’s ai-driven tool for automation and content creation.
+
+--
+
+3. Thirdly, here is the best special feature in this project. You can use this website in your own opinion. You can build any tools on your own prompt. And here there are lots of available tools for free. You can use these free tools for your project. For example, if you make content that needs a background animation, you can use this digi tools features free tools here is lots of free tools you can use; you can use these tools, or you can make your own tools, depending on your content
