@@ -88,7 +88,9 @@ const Navbar = ({ centerCart }) => {
               </span>
             </button>
           </div>
-          <button className="btn btn-ghost rounded-full">Login</button>
+          <button className="hidden md:block btn btn-ghost rounded-full">
+            Login
+          </button>
           <button className="btn rounded-full bg-linear-gradient text-white">
             Get Started
           </button>
